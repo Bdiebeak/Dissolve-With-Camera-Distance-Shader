@@ -27,14 +27,14 @@ public class CameraMovement : MonoBehaviour
 
     private void Zoom()
     {
-        float cameraZ = Mathf.Abs(cameraTransform.position.z);
+        float cameraDist = Vector3.Distance(cameraTransform.position, lookAtTransform.position);
 
-        if(Input.GetKey(KeyCode.Q) && cameraZ < maxZoom)
+        if(Input.GetKey(KeyCode.Q) && cameraDist < maxZoom)
         {
             cameraTransform.position -= cameraTransform.forward * zoomSpeed * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.E) && cameraZ > minZoom)
+        if (Input.GetKey(KeyCode.E) && cameraDist > minZoom)
         {
             cameraTransform.position += cameraTransform.forward * zoomSpeed * Time.deltaTime;
         }
