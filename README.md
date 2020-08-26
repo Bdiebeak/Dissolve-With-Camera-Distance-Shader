@@ -1,3 +1,3 @@
 # Dissolve-With-Camera-Distance-Shader
 Dissolve effect by camera distance in Unity.
-![Project GIF](https://i.imgur.com/AOL7pPB.gif)
+<img src="https://i.imgur.com/AOL7pPB.gif" width="600" height="400" />
