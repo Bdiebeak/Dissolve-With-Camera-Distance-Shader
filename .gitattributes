@@ -1,2 +1,2 @@
-*.sol linguist-language=ShaderLab
+*.shader linguist-language=ShaderLab
 *.shader linguist-detectable=false
